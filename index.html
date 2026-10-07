@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Proposta | Reels Outubro Rosa | Connective</title>
+<link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0b0f;--fg:#f6f3ff;--mut:#a9a3bd;--p:#7b2ff7;--o:#ff7a1a;--card:#17141f;--line:#2a2536;
+--h:'Chau Philomene One',Georgia,serif;--b:'Canva Sans','DM Sans',system-ui,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%;background:var(--bg);color:var(--fg);font-family:var(--b);overflow:hidden}
+.deck{height:100%;position:relative}
+.s{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:6vh 7vw 10vh;opacity:0;visibility:hidden;transform:translateX(30px);transition:.5s;overflow:hidden}
+.s.on{opacity:1;visibility:visible;transform:none}
+.s::before,.s::after{content:"";position:absolute;border-radius:50%;filter:blur(90px);z-index:0;pointer-events:none}
+.s::before{width:45vmax;height:45vmax;background:var(--p);opacity:.35;top:-20vmax;right:-12vmax}
+.s::after{width:30vmax;height:30vmax;background:var(--o);opacity:.25;bottom:-14vmax;left:-8vmax}
+.s>*{position:relative;z-index:1}
+h1,h2{font-family:var(--h);font-weight:400;line-height:1.05}
+h1{font-size:clamp(2.6rem,8vw,6.5rem)}
+h2{font-size:clamp(1.9rem,4.6vw,3.6rem);margin-bottom:3vh}
+.g{background:linear-gradient(90deg,var(--p),var(--o));-webkit-background-clip:text;background-clip:text;color:transparent}
+.tag{font-size:.8rem;letter-spacing:.25em;text-transform:uppercase;color:var(--o);font-weight:700;margin-bottom:2vh}
+.lead{font-size:clamp(1rem,1.9vw,1.45rem);color:var(--mut);max-width:44ch;line-height:1.5;margin-top:3vh}
+.lead b{color:var(--fg);font-weight:500}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px}
+.card .n{font-family:var(--h);font-size:2rem}
+.card h3{font-size:1.05rem;margin:6px 0;font-weight:700}
+.card p{font-size:.88rem;color:var(--mut);line-height:1.45}
+.list{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.list div{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px 16px 50px;position:relative;font-size:.98rem}
+.list div::before{content:"✓";position:absolute;left:16px;top:50%;transform:translateY(-50%);width:24px;height:24px;border-radius:50%;background:linear-gradient(135deg,var(--p),var(--o));display:grid;place-items:center;font-size:.8rem;font-weight:700}
+.price{font-family:var(--h);font-size:clamp(4rem,15vw,11rem);line-height:1}
+.pill{display:inline-block;border:1px solid var(--p);border-radius:99px;padding:8px 18px;font-size:.9rem;color:var(--fg);margin-top:3vh}
+.nav{position:fixed;left:0;right:0;bottom:0;display:flex;justify-content:space-between;align-items:center;padding:14px 7vw calc(14px + env(safe-area-inset-bottom,0px));z-index:5}
+.bar{flex:1;height:3px;background:var(--line);margin:0 16px;border-radius:3px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--p),var(--o));transition:.4s}
+.nav button{background:var(--card);border:1px solid var(--line);color:var(--fg);width:42px;height:42px;border-radius:50%;font-size:1.1rem;cursor:pointer}
+.brand{position:fixed;top:calc(18px + env(safe-area-inset-top,0px));left:7vw;font-family:var(--h);font-size:1.15rem;z-index:5}
+.brand span{color:var(--o)}
+</style>
+</head>
+<body>
+<div class="brand">connective<span>.</span></div>
+<div class="deck" id="d">
+
+<section class="s on">
+<div class="tag">Proposta comercial</div>
+<h1>Outubro <span class="g">Rosa</span><br>em formato Reels</h1>
+<p class="lead">Produção de conteúdo para a ação social: <b>leve, humana e espontânea.</b></p>
+</section>
+
+<section class="s">
+<div class="tag">A proposta</div>
+<h2>Cuidar de si e <span class="g">estar ao lado de quem enfrenta</span></h2>
+<p class="lead">Um Reels que apresenta a ação da empresa com <b>pessoas reais da equipe</b>, lembrando a importância do autocuidado, mas indo além: <b>todos nós podemos apoiar quem está passando por essa dificuldade</b> e fazer parte de uma rede de apoio.</p>
+<div class="pill">Leve · humano · espontâneo</div>
+</section>
+
+<section class="s">
+<div class="tag">O que está incluso</div>
+<h2>Da ideia ao <span class="g">play</span></h2>
+<div class="grid">
+<div class="card"><div class="n g">01</div><h3>Conceito criativo</h3><p>Ideia central do vídeo a partir da proposta apresentada pela equipe.</p></div>
+<div class="card"><div class="n g">02</div><h3>Roteiro</h3><p>Falas, dinâmica e sequência pensadas para soar natural.</p></div>
+<div class="card"><div class="n g">03</div><h3>Direção na gravação</h3><p>Apoio a cada participante com falas, posicionamento e dinâmica.</p></div>
+<div class="card"><div class="n g">04</div><h3>Captação</h3><p>Gravação no local, em formato vertical e linguagem de Instagram.</p></div>
+<div class="card"><div class="n g">05</div><h3>Edição</h3><p>Cortes, ritmo, trilha, textos na tela e elementos de finalização.</p></div>
+</div>
+</section>
+
+<section class="s">
+<div class="tag">06 · Entrega</div>
+<h2>O que você <span class="g">recebe</span></h2>
+<div class="list">
+<div>Desenvolvimento do conceito criativo</div>
+<div>Roteiro e estrutura do vídeo</div>
+<div>1 encontro presencial para captação no escritório</div>
+<div>Direção durante a gravação</div>
+<div>Captação em formato vertical</div>
+<div>Edição completa do Reels</div>
+<div>Inserção de trilha, textos e elementos visuais</div>
+<div>1 vídeo finalizado, pronto para publicação</div>
+</div>
+</section>
+
+<section class="s">
+<div class="tag">Investimento e prazo</div>
+<h2>Vamos <span class="g">fazer acontecer</span></h2>
+<div class="grid" style="max-width:760px">
+<div class="card"><p>Investimento</p><div class="n">R$ 450,00</div><p style="margin-top:8px">Criação e produção de 01 Reels, do conceito à entrega do vídeo finalizado.</p></div>
+<div class="card"><p>Prazo</p><div class="n">Sob medida</div><p style="margin-top:8px">Alinhado conforme a data da ação e a disponibilidade para gravação.</p></div>
+</div>
+<div class="pill">Cuidar também é conectar 💜🧡</div>
+</section>
+
+</div>
+<div class="nav"><button id="pv" aria-label="Anterior">←</button><div class="bar"><i id="pg"></i></div><button id="nx" aria-label="Próximo">→</button></div>
+<script>
+const S=[...document.querySelectorAll('.s')];let i=0;
+function go(n){i=Math.max(0,Math.min(S.length-1,n));S.forEach((s,k)=>s.classList.toggle('on',k===i));document.getElementById('pg').style.width=((i+1)/S.length*100)+'%'}
+pv.onclick=()=>go(i-1);nx.onclick=()=>go(i+1);
+addEventListener('keydown',e=>{if(['ArrowRight',' ','PageDown'].includes(e.key))go(i+1);if(['ArrowLeft','PageUp'].includes(e.key))go(i-1)});
+let x=0;addEventListener('touchstart',e=>x=e.touches[0].clientX);addEventListener('touchend',e=>{const d=e.changedTouches[0].clientX-x;if(Math.abs(d)>50)go(i+(d<0?1:-1))});
+go(0);
+</script>
+</body>
+</html>
